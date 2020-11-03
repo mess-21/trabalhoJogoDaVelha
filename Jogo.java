@@ -25,12 +25,12 @@ public class Jogo
 		frame.setLayout(null);
 		frame.setVisible(true);
 		
-		//Criando o Label
+		// Criando o Label
 		JLabel labelJogador = new JLabel("Turno do Jogador 1");
 		labelJogador.setBounds(96, 298, 128, 32);
 		frame.add(labelJogador);
 		
-		// Criando os botıes
+		// Criando os bot√µes
 		JButton btnCasa[][] = new JButton[3][3];
 		for(int i = 0; i < btnCasa.length; i++)
 		{
@@ -60,7 +60,7 @@ public class Jogo
 						// Alterando a Matriz
 						matrizPrincipal[x][y] = j_atual;
 						
-						// Trocando de Jogador e desabilitando o bot„o
+						// Trocando de Jogador e desabilitando o bot√£o
 						j_atual *= -1; 						
 						if (j_atual == 1 ) labelJogador.setText("Turno do Jogador 1");
 						else if (j_atual == -1 ) labelJogador.setText("Turno do Jogador 2");
